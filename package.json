@@ -1,0 +1,10 @@
+{
+  "name": "morse-code-translator",
+  "fullName": "Morse Code Translator",
+  "id": "jid1-bFE7zICA0BRGMg",
+  "description": "This extension provides a morse code translation pop-out",
+  "author": "Michael Lumish",
+  "license": "MPL 2.0",
+  "version": "0.1",
+  "dependencies" : ["browser-action"]
+}
