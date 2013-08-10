@@ -3,7 +3,7 @@
 
   "name" : "Morse Code Translator",
   "description" : "This extension provides a morse code translation pop-out",
-  "version" : "0.6",
+  "version" : "0.6.1",
 
   "icons" : {
     "16" : "img/icon16.png",

@@ -1,6 +1,7 @@
 .output {
     background-color : silver;
     overflow : auto;
+    font-weight: bold;
 }
 
 #container {
