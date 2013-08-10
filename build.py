@@ -2,7 +2,7 @@ import os
 from zipfile import ZipFile
 
 def build_chrome():
-  directories = ("js", "html", "img")
+  directories = ("js", "html", "img", "css")
   files = ("manifest.json",)
   with ZipFile("chrome.zip", "w") as chrome:
     for directory in directories:

@@ -1,0 +1,16 @@
+.output {
+    background-color : silver;
+    overflow : auto;
+}
+
+#container {
+    white-space: nowrap;
+}
+
+#left {
+    float : left;
+}
+
+#right {
+    float : right;
+}

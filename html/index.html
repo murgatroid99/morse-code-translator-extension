@@ -1,13 +1,31 @@
 <html>
   <head>
+    <link rel="stylesheet" href="/css/index.css">
     <script src="/js/underscore.js"></script>
     <script src="/js/morse.js"></script>
   </head>
   <body>
-    <div id="input">
-      <input type="text" id="morse" autofocus="autofocus">
+    <div id="container">
+      <div id="left">
+        <div id="input">
+          <div>Morse Code:</div>
+          <input type="text" id="morse" autofocus="autofocus">
+        </div>
+        <div>
+          <div>Translation:</div>
+          <div id="output" class="output"></div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="text-input">
+          <div>Text:</div>
+          <input type="text" id="text">
+        </div>
+        <div>
+          <div>Translation:</div>
+          <div id="text-output" class="output"></div>
+      </div>
     </div>
-    <div id="output"></div>
     <script src="/js/index.js"></script>
   </body>
 </html>

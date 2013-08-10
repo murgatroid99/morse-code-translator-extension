@@ -50,6 +50,8 @@ morse = (function(){
     }
   ];
 
+  var text_trans = _.invert(_.extend.apply(_, _.map(translations, _.clone)));
+
   exports.fromMorse = function(morse){
     return _.map(morse.split("/"), function(word){
       return _.map(word.split(" "), function(letter){
@@ -63,6 +65,18 @@ morse = (function(){
       }).join("");
     }).join(" ");
   };
+
+  exports.toMorse = function(text){
+    return _.map(text.toUpperCase().split(" "), function(word){
+      return _.map(word, function(letter){
+        if(_.has(text_trans, letter)){
+          return text_trans[letter];
+        } else {
+          return letter;
+        }
+      }).join("");
+    }).join("/");
+  }
 
   return exports;
 }());
