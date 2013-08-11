@@ -2,10 +2,13 @@
     background-color : silver;
     overflow : auto;
     font-weight: bold;
+    white-space: normal;
+    width: 50%;
 }
 
 #container {
     white-space: nowrap;
+    max-width: 500px;
 }
 
 #left {
@@ -15,3 +18,4 @@
 #right {
     float : right;
 }
+
